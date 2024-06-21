@@ -1,0 +1,88 @@
+h1{
+    color: #FFF;
+    text-shadow: 1px 2px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+    text-align: center;
+}
+div.galeria{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 darkorange, 0 6px 20px 0 rgba(0,0,0,0,19);
+    float: left;
+    width: 350px;
+}
+div.galeria img{
+    width: 350px;
+    height: 200px; 
+    
+}
+div.galeria:hover{
+    border: 1px solid red;
+
+}
+div.pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    padding: 10px;
+}
+body{
+    
+    background: #FF4E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+a{
+    color: #FFF;
+}
+nav{
+    position: relative;
+    width: 475px;
+    height: 50px;
+    background: darkorange;
+    border-radius: 10px;
+    display: flex;
+}
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #FFF;
+    text-decoration:none;
+    padding: 0 23px;
+    z-index: 1;
+    justify-content: center;
+}
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #194b4f,#33fffc);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+nav a:nth-child(1):hover~span{
+    left: 0px;
+}
+nav a:nth-child(2):hover~span{
+    left: 90px;
+}
+nav a:nth-child(3):hover~span{
+    left: 180px;
+}
+nav a:nth-child(4):hover~span{
+    left: 275px;
+}
+nav a:nth-child(5):hover~span{
+    left: 380px;
+}
+footer{
+    background-color: orange;
+    color: #FFF;
+    width: 100%;
+    position: absolute;
+    text-align: center; 
+
+}
